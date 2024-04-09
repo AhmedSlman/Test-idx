@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
         builder: (context, theme) {
           return MaterialApp(
             title: 'Theme Switcher',
+            debugShowCheckedModeBanner: false,
             theme: theme == ThemeMode.light ? lightTheme : darkTheme,
             home: MyHomePage(),
           );
